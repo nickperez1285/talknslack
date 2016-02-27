@@ -210,6 +210,7 @@ $('button#call').click(function(event) {
 
 /*** Mute / unmute self ***/
 var muted=false;
+
 $('button#talk').click(function(event) {
 	event.preventDefault();
 	if (muted)
