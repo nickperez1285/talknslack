@@ -209,39 +209,22 @@ $('button#call').click(function(event) {
 });
 
 /*** Mute / unmute self ***/
-
-// $('button#talk').click(function(event) {
-// 	event.preventDefault();
-
-// 	if $('button').addClass('incall');
-
-// 		$('button').addClass('incall');
-
-// 		$('div#callLog').append('<div id="title">Calling ' + $('input#callUserName').val()+'</div>');
-
-// 		console.log('Placing call to: ' + $('input#callUserName').val());
-// 		call = callClient.callConference($('input#callUserName').val());
-
-// 		call.addEventListener(callListeners);
-// 	}
-// });
-
+var muted=false:
 $('button#talk').click(function(event) {
 	event.preventDefault();
+if (muted)
+{
+	call.unmute()
+}
+else
+{
+		call.mute()
 
-	if(!$(this).hasClass("incall") && !$(this).hasClass("callwaiting")) {
-		clearError();
+}
+muted = !mute;
+	});
 
-		$('button').addClass('incall');
 
-		$('div#callLog').append('<div id="title">Calling ' + $('input#callUserName').val()+'</div>');
-
-		console.log('Placing call to: ' + $('input#callUserName').val());
-		call = callClient.callConference($('input#callUserName').val());
-
-		call.addEventListener(callListeners);
-	}
-});
 
 
 
