@@ -202,7 +202,7 @@ $('button#call').click(function(event) {
 
 		console.log('Placing call to: ' + $('input#callUserName').val());
 		call = callClient.callConference($('input#callUserName').val());
-qws
+
 		call.addEventListener(callListeners);
 	}
 });
