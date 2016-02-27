@@ -35,37 +35,35 @@
 
 			<div class="inner takeaways">
 				<h3>Directions</h3>
-				<ul>
-					<li>1. Create a username and password if you have not already done so </li>
-					<li>2. Login </li>
-					<li>3. enter the name of the group community </li>
-					<li>4. Enter community chat </li>
+				<ol>
+					<li>Create a username and password if you have not already done so </li>
+					<li> Login </li>
+					<li> Enter the ID or name of the group that would you like to set up two way communication with </li>
+					<li> Press talk to broadcast to all members in the group</li>
+					<li> Press mute to pause your transmission  </li>
+					<li> Press leave leave group </li>
 		
-				</ul>
+				</ol>
 			</div>
 		</div>
 
 		<div class="frame">
-			<h3>Community Name (must be at least 3 characters ) </h3>
+			<h3>Group ID (case sensitive, requires 3 or more characters ) </h3>
 			<div id="call">
 				<form id="newCall">
 					<input id="callUserName" placeholder="Enter Community ID/Name"><br>
 
 
-					<button id="call" >Broadcast</button>
-					<button id="mute">Mute	</button>
-					<button id="hangup">Leave</button>
- -->					
+					<button class = 'function' style= "background: green">Talk</button>
+					<button class = 'function' style= "background: red"> Mute</button>
+					<button class = 'function'>Leave</button>
+ 				
 					<audio id="incoming" autoplay></audio>
 					<audio id="ringback" src='style/ringback.wav' loop></audio>
 					<audio id="ringtone" src='style/phone_ring.wav' loop></audio>
 				</form>
 			</div>
-			<div class="clearfix"></div>
-			<div id="callLog">
-			</div>
-			<div class="error">
-			</div>
+		
 		</div>
 	</div>
 </body>

@@ -260,7 +260,7 @@ input {
 
 button {
 	color: #fff;
-	background-color: #63029C;
+	background-color: #04029C;
 	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -325,31 +325,36 @@ div#callLog #stats {
 }
 
 button#call.incall {
-	background-color: #d9bfe9;
+	background-color: #04029C;
 }
 
 button#call.callwaiting {
-	background-color: #d9bfe9;
+	background-color: #04029C;
 }
 
 button#hangup {
-	background-color: #d9bfe9;
+	background-color: #04029C;
 }
 
 button#hangup.incall {
-	background-color: #62029d;
+	background-color: #04029C;
 }
 
 button#answer {
-	background-color: #d9bfe9;
+	background-color: #04029C;
 }
 
 button#answer.callwaiting {
-	background-color: #62029d;
+	background-color: #04029C;
 }
 
 form#newCall button {
 	float: right;
 }
-
+.function{
+	border-radius: 25px;
+	margin:2em ;
+     height: 5em;
+     width: 5em ;
+}
 
