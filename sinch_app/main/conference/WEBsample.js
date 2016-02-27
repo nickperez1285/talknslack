@@ -209,19 +209,23 @@ $('button#call').click(function(event) {
 });
 
 /*** Mute / unmute self ***/
-
+var muted=false;
 
 $('button#talk').click(function(event) {
 	event.preventDefault();
 	
-	if (muted = false) 
-	{
-		call.unmute()
-	}else if ( muted = true) {
+	if (call.unmute() = true )
+	{ 
 		call.mute()
+
+	}else if (call.mute() = true ){
+	
+		call.unmute()
+
 	}
 	muted = !mute;
 });
+
 
 
 
