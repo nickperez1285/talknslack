@@ -152,6 +152,7 @@ var callClient = sinchClient.getCallClient();
 callClient.initStream().then(function() { // Directly init streams, in order to force user to accept use of media sources at a time we choose
 	$('div.frame').not('#chromeFileWarning').show();
 }); 
+
 var call;
 
 callClient.addEventListener({
@@ -188,7 +189,7 @@ $('button#answer').click(function(event) {
 	}
 });
 
-/*** Make a new data call ***/
+/*** Enter call ***/
 
 $('button#call').click(function(event) {
 	event.preventDefault();
@@ -207,7 +208,45 @@ $('button#call').click(function(event) {
 	}
 });
 
-/*** Hang up a call ***/
+/*** Mute / unmute self ***/
+
+// $('button#talk').click(function(event) {
+// 	event.preventDefault();
+
+// 	if $('button').addClass('incall');
+
+// 		$('button').addClass('incall');
+
+// 		$('div#callLog').append('<div id="title">Calling ' + $('input#callUserName').val()+'</div>');
+
+// 		console.log('Placing call to: ' + $('input#callUserName').val());
+// 		call = callClient.callConference($('input#callUserName').val());
+
+// 		call.addEventListener(callListeners);
+// 	}
+// });
+
+$('button#talk').click(function(event) {
+	event.preventDefault();
+
+	if(!$(this).hasClass("incall") && !$(this).hasClass("callwaiting")) {
+		clearError();
+
+		$('button').addClass('incall');
+
+		$('div#callLog').append('<div id="title">Calling ' + $('input#callUserName').val()+'</div>');
+
+		console.log('Placing call to: ' + $('input#callUserName').val());
+		call = callClient.callConference($('input#callUserName').val());
+
+		call.addEventListener(callListeners);
+	}
+});
+
+
+
+
+/*** Leave Group ***/
 
 $('button#hangup').click(function(event) {
 	event.preventDefault();
