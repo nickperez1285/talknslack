@@ -245,7 +245,7 @@ form#newMessage {
 }
 
 input {
-	width: 100%;
+	width: 75%;
 	border-radius: 3px;
 	padding: 5px;
 	margin: 5px 0px;
@@ -352,9 +352,14 @@ form#newCall button {
 	float: right;
 }
 .function{
-	border-radius: 25px;
-	margin:2em ;
-     height: 5em;
-     width: 5em ;
+	border-radius: 4em;
+	margin:3em ;
+     height: 6em;
+     width: 6em ;
 }
+
+/*#functions{
+	float:left;
+}*/
+
 
