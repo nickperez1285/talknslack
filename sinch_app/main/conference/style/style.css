@@ -285,6 +285,7 @@ span#username {
 div.top1 {
     height:330px;
     background-color:#FFFFFF;
+
     overflow: hidden;
     transform:translate3d(0, 0px, 0);
     background-image:url('Stocksy_txp6806d733sOI000_Medium_85229.jpg');
@@ -297,6 +298,9 @@ div.top1 {
 	text-align: center;
 }
 
+button#{
+	border:
+}
 div.top1 h1 {
 	margin-top: 140px;
 	font-family: 'Roboto', sans-serif;
