@@ -11,7 +11,7 @@ var showUI = function() {
 	$('span#username').text(global_username);
 }
 
-showUI();
+showUI()
 /*** If no valid session could be started, show the login interface ***/
 
 var showLoginUI = function() {
