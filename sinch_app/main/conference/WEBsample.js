@@ -292,13 +292,13 @@ if(location.protocol == 'file:' && navigator.userAgent.toLowerCase().indexOf('ch
 $('button').prop('disabled', false); //Solve Firefox issue, ensure buttons always clickable after load
 
 
-// $('button').hover(
-//     function(){
-//       var $this = $(this);
-//       $this.data('bgcolor', $this.css('background-color')).css('background-color', 'silver');
-//     },
-//     function(){
-//       var $this = $(this);
-//       $this.css('background-color', $this.data('bgcolor'));
-//     }
-  //);  
+$('button').hover(
+    function(){
+      var $this = $(this);
+      $this.data('bgcolor', $this.css('background-color')).css('background-color', 'silver');
+    },
+    function(){
+      var $this = $(this);
+      $this.css('background-color', $this.data('bgcolor'));
+    }
+  );  
