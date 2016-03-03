@@ -218,7 +218,6 @@ $('button#mute').click(function(event) {
 		call.unmute()
 	}else{
 		call.mute()
-		alert("muted")
 
 	}
 	muted = !muted;
