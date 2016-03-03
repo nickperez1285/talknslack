@@ -218,7 +218,7 @@ $('button#mute').click(function(event) {
 		call.unmute()
 	}else{
 		call.mute()
-		$(this).css('background-color', "silver")
+		alert("muted")
 
 	}
 	muted = !muted;
