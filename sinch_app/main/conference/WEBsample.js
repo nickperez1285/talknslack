@@ -218,7 +218,18 @@ $('button#mute').click(function(event) {
 		call.unmute()
 	}else{
 		call.mute()
-		$('button#mute').css('background-color').css, ('background-color', 'silver');
+
+	}
+	muted = !muted;
+});
+
+$('button#mute').click(function(event) {
+	event.preventDefault();
+	if (muted)
+	{
+$('button#mute').css('background-color').css, ('background-color', 'silver');
+	}else{
+	$('button#mute').css('background-color', $('button#mute').data('bgcolor')};
 
 	}
 	muted = !muted;
