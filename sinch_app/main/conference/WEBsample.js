@@ -315,16 +315,18 @@ function selected(back) {
 	// body...
 }
 
+
+
 $('button').prop('disabled', false); //Solve Firefox issue, ensure buttons always clickable after load
 
 
-$('button').click(
-    function(){
-      var $this = $(this);
-      $this.data('bgcolor', $this.css('background-color')).css('background-color', 'silver');
-    },
-    function(){
-      var $this = $(this);
-      $this.css('background-color', $this.data('bgcolor'));
-    }
-  );  
+// $('button').click(
+//     function(){
+//       var $this = $(this);
+//       $this.data('bgcolor', $this.css('background-color')).css('background-color', 'silver');
+//     },
+//     function(){
+//       var $this = $(this);
+//       $this.css('background-color', $this.data('bgcolor'));
+//     }
+//   );  
