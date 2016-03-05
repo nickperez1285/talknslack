@@ -223,6 +223,15 @@ $('button#mute').click(function(event) {
 	muted = !muted;
 });
 
+
+
+var showUI = function() {
+	$('div#call').show();
+	$('form#userForm').css('display', 'none');
+	$('div#userInfo').css('display', 'inline');
+	$('h3#login').css('display', 'none');
+	$('span#username').text(global_username);
+}
 /*** Leave Group ***/
 
 $('button#hangup').click(function(event) {
@@ -284,13 +293,16 @@ if(location.protocol == 'file:' && navigator.userAgent.toLowerCase().indexOf('ch
 $('button').prop('disabled', false); //Solve Firefox issue, ensure buttons always clickable after load
 
 
-$('button').hover(
-    function(){
-      var $this = $(this);
-      $this.data('bgcolor', $this.css('background-color')).css('background-color', 'silver');
-    },
-    function(){
-      var $this = $(this);
-      $this.css('background-color', $this.data('bgcolor'));
-    }
-  );  
+// $('button').click(
+//     function(){
+//       var $this = $(this);
+//       $this.data('bgcolor', $this.css('background-color')).css('background-color', 'silver');
+//     },
+//     function(){
+//       var $this = $(this);
+//       $this.css('background-color', $this.data('bgcolor'));
+//     }
+//   );  
+$('button#mute').click(function(){
+  $(this).toggleClass('silver');
+});
