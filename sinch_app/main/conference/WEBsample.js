@@ -290,15 +290,19 @@ if(location.protocol == 'file:' && navigator.userAgent.toLowerCase().indexOf('ch
 	$('div#chromeFileWarning').show();
 }
 
+
 $('button#mute').click(function(){
 	if ($(this).css('background-color','red'))
-	{$(this).css('background-color','silver');
-}else if($(this).css('background-color','silver');{
+	{
+		$(this).css('background-color','silver');
+ 	}
+else if($(this).css('background-color','silver'))
+{
 	$(this).css('background-color','red');
 
 }
 
-)
+})
 
 
 $('button').prop('disabled', false); //Solve Firefox issue, ensure buttons always clickable after load
