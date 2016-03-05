@@ -291,19 +291,29 @@ if(location.protocol == 'file:' && navigator.userAgent.toLowerCase().indexOf('ch
 }
 
 
-$('button#mute').click(function(){
-	if ($(this).css('background-color','red'))
-	{
-		$(this).css('background-color','silver');
- 	}
-else if($(this).css('background-color','silver'))
-{
-	$(this).css('background-color','red');
+// $('button#mute').click(function(){
+// 	var back = $(this).css('background-color');
+// 	if (back =='red')
+// 	{
+// 		$(this).css('background-color','silver');
+//  	}else {
+// 	$(this).css('background-color','red');
 
+// }
+
+
+// })
+var back = document.getElementById("mute")
+function selected(back) {
+	var background = back.style.backgroundColor; 
+	if (background == "red"){
+		back.style.backgroundColor = 'silver';
+	}else{
+		back.style.backgroundColor = 'red';
+
+	}
+	// body...
 }
-
-})
-
 
 $('button').prop('disabled', false); //Solve Firefox issue, ensure buttons always clickable after load
 
